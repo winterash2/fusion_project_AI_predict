@@ -54,7 +54,7 @@ def predict(chunk):
     while True:
     # for i in range(10):
     #     _, img = cap.read()
-        img = cv2.imread(cap)
+        img = cv2.imread(cap, 1)
         height, width, _ = img.shape
 
         blob = cv2.dnn.blobFromImage(img, 1/255, (416, 416), (0,0,0), swapRB=True, crop=False)
