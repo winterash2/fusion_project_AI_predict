@@ -41,7 +41,7 @@ def get_image(request):
     return JsonResponse(result)
 
 def predict(chunk):
-    net = cv2.dnn.readNet('yolov3-custom_8000.weights','custom.cfg')
+    net = cv2.dnn.readNet('yolov3-custom_42000.weights','custom.cfg')
 
     classes = []
     with open("classes.txt", "r") as f:
