@@ -33,11 +33,10 @@ def get_image(request):
 #         result = 0
 #     result = {'result':'0', 'percentage': percentage, 'time':'2020-11-14'}
 
-    # result = predict(filename)
-
+    result = predict(filename)
     # print("???????"+result)
-    # result = {'result':result}
-    result = {'result':'result'}
+    result = {'result':result}
+    # result = {'result':'result'}
     return JsonResponse(result)
 
 def predict(chunk):
