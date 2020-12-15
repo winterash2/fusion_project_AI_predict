@@ -18,12 +18,12 @@ def get_image(request):
         filename = str(file_obj)
         # file_obj = request.data['file']
         # print(files)
-        print(filename)
+        # print(filename)
         with default_storage.open(filename, 'wb+') as destination:
             for chunk in file_obj.chunks():
                 destination.write(chunk)
-                print(destination)
-                print(chunk)
+                # print(destination)
+                # print(chunk)
                 filename = chunk
     
     # 판별기
