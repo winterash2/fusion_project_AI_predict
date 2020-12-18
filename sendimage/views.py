@@ -28,7 +28,7 @@ def get_image(request):
 def predict(filename):
     return_label = ''
 
-    net = cv2.dnn.readNet('yolov3-custom_42000.weights','custom.cfg')
+    net = cv2.dnn.readNet('/home/ubuntu/fusion_project_AI_predict/yolov3-custom_42000.weights','custom.cfg')
 
     classes = []
     with open("classes.txt", "r") as f:
